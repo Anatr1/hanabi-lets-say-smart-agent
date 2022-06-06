@@ -1,6 +1,3 @@
-"""
-A "Smart" agent that plays according to a rule set that it has evolved during training?
-"""
 from sys import argv
 from time import sleep
 from multiprocessing import Lock, Process
@@ -30,7 +27,7 @@ class SmartClient(Client):
         self.last_hinted_card = None
         self.print_to_console = print_to_console
 
-    def generate_random_move(self):
+    def generateRandomMove(self):
         """Generates a random valid move"""
         if len(self.game_data["players"]) == 0:
             return "show"

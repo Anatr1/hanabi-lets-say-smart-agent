@@ -172,7 +172,7 @@ def hintRandom(client: SmartClient):
 
 def playRandomMove(client: SmartClient):
     """just play a random legal move"""
-    move = client.generate_random_move()
+    move = client.generateRandomMove()
     err = not (("hint" in move) or ("play" in move) or ("discard" in move))
     return move, err
 
